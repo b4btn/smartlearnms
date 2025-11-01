@@ -1,0 +1,18 @@
+@if(authVerify()){
+<div class="navbar">
+  <div class="navbar-title">
+    <p>
+      SmartLearnMS
+    </p>
+  </div>
+  <div class="logout-btn">
+    <button matButton="elevated" (click)="logout()">Logout</button>
+  </div>
+</div>
+<div class="navbar-container">
+  <router-outlet></router-outlet>
+</div>
+}
+@else{
+<app-login></app-login>
+}

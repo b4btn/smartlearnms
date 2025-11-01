@@ -1,0 +1,29 @@
+<div class="course-list-container">
+  <p class="title-text">
+    Course List
+  </p>
+  <div class="course-list-items-container">
+    @if(listLoaded()){
+    @for(course of courseList;track course.uid){
+    <div class="course-list-item-container">
+      <mat-card appearance="outlined" [routerLink]="course.uid">
+        <mat-card-header>
+          <mat-card-title>{{course.course_name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{course.course_description}}</p>
+          <p>
+            Instructor: {{course.course_author}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    }
+    }
+    @else{
+    <div class="spinner-container">
+      <mat-spinner></mat-spinner>
+    </div>
+    }
+  </div>
+</div>

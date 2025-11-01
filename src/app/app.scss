@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 9999999;
+  background: #FFFFFF;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  padding: 0 0 0 1rem;
+}
+
+.logout-btn {
+  padding: 0 1rem 0 0;
+}
+
+.navbar-container {
+  overflow: hidden;
+}

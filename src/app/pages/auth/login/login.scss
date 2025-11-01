@@ -1,0 +1,37 @@
+.credentials-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials-container {
+  width: full;
+  height: full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.credentials-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  padding: 1rem;
+  width: full;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.75rem;
+}
